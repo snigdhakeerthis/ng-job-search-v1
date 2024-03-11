@@ -1,0 +1,36 @@
+.main-container {
+  margin: 1rem 5rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+#tabs li {
+  float: left;
+  list-style: none;
+  text-align: center;
+  background-color: #d7dbdd;
+  margin-right: 30px;
+  width: 45%;
+  line-height: 60px;
+}
+
+#tabs li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.active {
+  background-color: #34495e !important;
+}
+
+#tabs li a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-color: #33b5e5;
+}
