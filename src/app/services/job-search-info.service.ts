@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Jobs } from '../models/jobs';
 import { JobInfo } from '../models/job-info';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class JobSearchInfoService {
   constructor(private readonly http: HttpClient) {}
 

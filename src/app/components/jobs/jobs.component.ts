@@ -1,22 +1,15 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Jobs } from '../../models/jobs';
-import { Subscription, delay, tap } from 'rxjs';
+import { Subscription, tap } from 'rxjs';
 import { JobSearchInfoService } from '../../services/job-search-info.service';
 import { NgFor, NgIf, CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-jobs',
   standalone: true,
-  imports: [
-    NgFor,
-    NgIf,
-    CommonModule,
-    RouterModule,
-    HttpClientModule,
-    RouterOutlet,
-  ],
+  imports: [NgFor, NgIf, CommonModule, RouterModule, HttpClientModule],
   providers: [JobSearchInfoService],
   templateUrl: './jobs.component.html',
   styleUrl: './jobs.component.css',
