@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Jobs } from '../../models/jobs';
-import { Subscription, tap } from 'rxjs';
+import { Subscription, delay, tap } from 'rxjs';
 import { JobSearchInfoService } from '../../services/job-search-info.service';
 import { NgFor, NgIf, CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
