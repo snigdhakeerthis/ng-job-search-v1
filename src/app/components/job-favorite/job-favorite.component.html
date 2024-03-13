@@ -12,7 +12,7 @@
           />
         </div>
         <div class="company-name">
-          <p class="title">{{ favoriteJob.title }}</p>
+          <p class="title" (click)="goToJobDetails(favoriteJob.id)">{{ favoriteJob.title }}</p>
           <span
             ><b class="name">Company:</b> {{ favoriteJob.companyName }}</span
           >
